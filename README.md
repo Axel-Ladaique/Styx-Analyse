@@ -28,7 +28,7 @@ Une version compilée est disponible dans les **[Releases](https://github.com/Ax
 
 ---
 
-## 🛠️ Technologies
+## 🛠️ Librairies (pas encore complet)
 
 - [Python 3.9+](https://www.python.org/)
 - [PyQt6](https://pypi.org/project/PyQt6/) (interface graphique)
@@ -36,7 +36,7 @@ Une version compilée est disponible dans les **[Releases](https://github.com/Ax
 - [Matplotlib](https://matplotlib.org/) (graphiques)
 - [Pandas](https://pandas.pydata.org/) et [NumPy](https://numpy.org/) (analyse de données)
 
----
+
 
 ## 📄 Licence
 
@@ -48,3 +48,14 @@ Licence a définir.
 ## 🆘 Support
 
 👉 Pour toute question ou bug : [Page support STYX Analyse](https://styx-projet.fr/styx-analyse)
+
+
+# User Guide : STYX Analyse
+
+## Page d'acceuil 
+
+<img width="2032" height="1167" alt="Capture d’écran 2025-09-10 à 21 46 33" src="https://github.com/user-attachments/assets/57fb2686-aba8-4940-bc03-f37dc39548d0" />
+
+
+
+
