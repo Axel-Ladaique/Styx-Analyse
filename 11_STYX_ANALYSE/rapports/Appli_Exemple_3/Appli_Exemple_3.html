@@ -1,0 +1,264 @@
+
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rapport d'Analyse - Appli_Exemple_3</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                margin: 40px;
+                background-color: #f8fafc;
+                color: #334155;
+                line-height: 1.6;
+            }
+            .header {
+                text-align: center;
+                margin-bottom: 40px;
+                padding: 30px;
+                background: linear-gradient(135deg, #3b82f6, #1e40af);
+                color: white;
+                border-radius: 12px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+            .header h1 {
+                margin: 0 0 10px 0;
+                font-size: 2.5em;
+            }
+            .header h2 {
+                margin: 0 0 15px 0;
+                font-weight: 300;
+                opacity: 0.9;
+            }
+            .section {
+                background: white;
+                margin: 30px 0;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+                border: 1px solid #e2e8f0;
+            }
+            .section h2 {
+                margin-top: 0;
+                color: #1e40af;
+                border-bottom: 2px solid #e2e8f0;
+                padding-bottom: 10px;
+            }
+            .stats-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 20px;
+                margin: 25px 0;
+            }
+            .stat-item {
+                background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+                padding: 20px;
+                border-radius: 8px;
+                text-align: center;
+                border: 1px solid #cbd5e1;
+            }
+            .stat-value {
+                font-size: 28px;
+                font-weight: bold;
+                color: #1e40af;
+                margin-bottom: 5px;
+            }
+            .stat-label {
+                color: #64748b;
+                font-size: 13px;
+                font-weight: 500;
+            }
+            .graphs-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+                gap: 25px;
+                margin: 25px 0;
+            }
+            .graph-item {
+                text-align: center;
+                background: #f8fafc;
+                padding: 15px;
+                border-radius: 8px;
+                border: 1px solid #e2e8f0;
+            }
+            .graph-item h3 {
+                margin: 0 0 15px 0;
+                color: #475569;
+            }
+            .graph-item img {
+                max-width: 100%;
+                height: auto;
+                border: 1px solid #cbd5e1;
+                border-radius: 6px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .map-container {
+                text-align: center;
+                margin: 25px 0;
+                background: #f8fafc;
+                padding: 20px;
+                border-radius: 8px;
+                border: 1px solid #e2e8f0;
+            }
+            .map-container img {
+                max-width: 100%;
+                height: auto;
+                border: 2px solid #cbd5e1;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+            .files-info {
+                display: grid;
+                gap: 20px;
+            }
+            .file-item {
+                padding: 20px;
+                border-radius: 8px;
+                border: 1px solid #e2e8f0;
+            }
+            .file-item.selection {
+                background: #f0f9ff;
+                border-left: 4px solid #3b82f6;
+            }
+            .file-item.complete {
+                background: #fef3c7;
+                border-left: 4px solid #f59e0b;
+            }
+            .file-item h4 {
+                margin: 0 0 12px 0;
+                color: #1f2937;
+            }
+            .file-item p {
+                margin: 6px 0;
+                font-size: 14px;
+            }
+            .comments {
+                background: #fffbeb;
+                padding: 20px;
+                border-left: 4px solid #f59e0b;
+                border-radius: 8px;
+                white-space: pre-wrap;
+                font-family: 'Courier New', monospace;
+            }
+            .info-box {
+                background: #f0fdf4;
+                padding: 15px;
+                border-left: 4px solid #22c55e;
+                border-radius: 8px;
+                margin: 15px 0;
+                font-size: 13px;
+                font-weight: 500;
+            }
+            .tech-info {
+                background: #f8fafc;
+                padding: 20px;
+                border-radius: 8px;
+                border: 1px solid #e2e8f0;
+            }
+            .tech-info p {
+                margin: 8px 0;
+            }
+            .footer {
+                text-align: center;
+                margin-top: 50px;
+                color: #64748b;
+                font-size: 13px;
+            }
+            @media print {
+                body { margin: 20px; }
+                .section { break-inside: avoid; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>📊 Rapport d'Analyse</h1>
+            <h2>Appli_Exemple_3</h2>
+            <p>Généré le 10 September 2025 à 16:04:43</p>
+        </div>
+
+        <div class="section">
+            <h2>📈 Statistiques du Trajet Analysé</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">16015 m</div>
+                    <div class="stat-label">Distance (GPS)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">84.4 min</div>
+                    <div class="stat-label">Durée</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">12.2 km/h</div>
+                    <div class="stat-label">Vitesse Moyenne</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">37.5 km/h</div>
+                    <div class="stat-label">Vitesse Maximum</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">199 m</div>
+                    <div class="stat-label">Dénivelé</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">44316.2 Wh</div>
+                    <div class="stat-label">Énergie Consommée</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🗺️ Carte GPS</h2>
+            <div class="map-container">
+                <img src="carte_gps.png" alt="Carte GPS du trajet analysé">
+            </div>
+            <div class="info-box">
+                📍 Carte générée avec marqueurs de départ (🟢) et d'arrivée (🔴)
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📊 Graphiques d'Analyse</h2>
+            <div class="graphs-container">
+    
+                <div class="graph-item">
+                    <h3>Graphique 1</h3>
+                    <img src="graphiques/graphique_1.png" alt="Graphique 1">
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="section">
+            <h2>📁 Fichiers de Données</h2>
+            <div class="files-info">
+                <div class="file-item selection">
+                    <h4>📊 Données de la sélection</h4>
+                    <p><strong>Fichier:</strong> Appli_Exemple_3_donnees_selection.csv</p>
+                    <p><strong>Contenu:</strong> Données filtrées selon la plage sélectionnée (302.3s à 5366.4s)</p>
+                    <p><strong>Points de données:</strong> 6,928</p>
+                    <p><strong>🔒 Confidentialité:</strong> Contient uniquement la portion sélectionnée</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💬 Commentaires</h2>
+            <div class="comments">Aucun commentaire</div>
+        </div>
+
+        <div class="section">
+            <h2>📋 Informations Techniques</h2>
+            <div class="tech-info">
+                <p><strong>Période analysée:</strong> 302.3s à 5366.4s</p>
+                <p><strong>Nombre de points analysés:</strong> 6,928</p>
+                <p><strong>Fichier source:</strong> session_2025-07-27_12-18-44.csv</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Rapport généré par STYX Analyse • 2025</p>
+        </div>
+    </body>
+    </html>
